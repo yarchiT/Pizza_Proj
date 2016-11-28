@@ -1,0 +1,67 @@
+<% include common/header.ejs %>
+
+<div class="main_container container-fluid">
+    <div class="row">
+
+        <div class="left_panel">
+
+            <div class="page_title">
+                <h2>
+                    <span> Усі піци</span>
+                    <span class="badge orange pizza-count"></span>
+                </h2>
+            </div>
+            <div class="all_pizza_type_wrap">
+                <ul class="nav nav-pills all-pizza-type">
+                    <li class="pizza-button active"><a href="#">Усі</a></li>
+                    <li class="pizza-button"><a href="#">Мясні</a></li>
+                    <li class="pizza-button"><a href="#">З ананасами</a></li>
+                    <li class="pizza-button"><a href="#">З грибами</a></li>
+                    <li class="pizza-button"><a href="#">З морепродуктами</a></li>
+                    <li class="pizza-button"><a href="#">Вега</a></li>
+                </ul>
+            </div>
+
+
+            <div class="row pizza-list" id="pizza_list">
+
+
+            </div>
+
+        </div>
+        <div class="right_panel">
+            <div class="order">
+                <span class="order-list-title">Замовлення</span>
+                <span class="badge orange orders-count-span">0</span>
+                <span class="clear-order-wrap clear_order">Очистити замовлення</span>
+
+            </div>
+
+            <div class="all-orders r2" id="cart">
+                <div class="no-orders none">
+                    Пусто в холодильнику?<br>
+                    Замовте піцу!
+                </div>
+            </div>
+
+            <div class="order-state r3">
+                <div class="orderPizza">
+
+                    <span class="sum-title">Сума замовлення</span>
+                    <span class="total"><span class="sum-number"></span>грн</span>
+
+                </div>
+                <div class="do-order-button">
+                    <a href="http://localhost:5050/order.html">
+                    <button type="button" class="btn btn-warning btn-lg btn-block button-order">
+                        Замовити
+                    </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<% include common/footer.ejs %>
